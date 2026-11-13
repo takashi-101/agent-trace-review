@@ -1,0 +1,710 @@
+{
+  "resourceSpans": [
+    {
+      "resource": {
+        "attributes": [
+          {
+            "key": "service.name",
+            "value": {
+              "stringValue": "madoguchi-agent"
+            }
+          }
+        ]
+      },
+      "scopeSpans": [
+        {
+          "scope": {
+            "name": "example"
+          },
+          "spans": [
+            {
+              "traceId": "a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6",
+              "spanId": "a1b2c3d4e5f6a7b0",
+              "name": "invoke_agent madoguchi-agent",
+              "kind": 1,
+              "startTimeUnixNano": "1794800000000000000",
+              "endTimeUnixNano": "1794800010000000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "invoke_agent"
+                  }
+                },
+                {
+                  "key": "gen_ai.agent.name",
+                  "value": {
+                    "stringValue": "madoguchi-agent"
+                  }
+                }
+              ],
+              "status": {}
+            },
+            {
+              "traceId": "a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6",
+              "spanId": "a1b2c3d4e5f60001",
+              "parentSpanId": "a1b2c3d4e5f6a7b0",
+              "name": "execute_tool search_faq",
+              "kind": 1,
+              "startTimeUnixNano": "1794800002000000000",
+              "endTimeUnixNano": "1794800002800000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_faq"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.type",
+                  "value": {
+                    "stringValue": "function"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.call.id",
+                  "value": {
+                    "stringValue": "call_a1b2_1"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.call.arguments",
+                  "value": {
+                    "stringValue": "{\"q\": \"住民票 郵送 期間\"}"
+                  }
+                }
+              ],
+              "status": {}
+            },
+            {
+              "traceId": "a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6",
+              "spanId": "a1b2c3d4e5f60002",
+              "parentSpanId": "a1b2c3d4e5f6a7b0",
+              "name": "execute_tool get_record",
+              "kind": 1,
+              "startTimeUnixNano": "1794800004000000000",
+              "endTimeUnixNano": "1794800004800000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "get_record"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.type",
+                  "value": {
+                    "stringValue": "function"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.call.id",
+                  "value": {
+                    "stringValue": "call_a1b2_2"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.call.arguments",
+                  "value": {
+                    "stringValue": "{\"id\": \"R-1024\"}"
+                  }
+                }
+              ],
+              "status": {}
+            },
+            {
+              "traceId": "a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6",
+              "spanId": "a1b2c3d4e5f60003",
+              "parentSpanId": "a1b2c3d4e5f6a7b0",
+              "name": "execute_tool request_human_approval",
+              "kind": 1,
+              "startTimeUnixNano": "1794800006000000000",
+              "endTimeUnixNano": "1794800006800000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "request_human_approval"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.type",
+                  "value": {
+                    "stringValue": "function"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.call.id",
+                  "value": {
+                    "stringValue": "call_a1b2_3"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.call.arguments",
+                  "value": {
+                    "stringValue": "{\"action\": \"send_email\"}"
+                  }
+                },
+                {
+                  "key": "app.approval.decision",
+                  "value": {
+                    "stringValue": "approved"
+                  }
+                }
+              ],
+              "status": {}
+            },
+            {
+              "traceId": "a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6",
+              "spanId": "a1b2c3d4e5f60004",
+              "parentSpanId": "a1b2c3d4e5f6a7b0",
+              "name": "execute_tool send_email",
+              "kind": 1,
+              "startTimeUnixNano": "1794800008000000000",
+              "endTimeUnixNano": "1794800008800000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "send_email"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.type",
+                  "value": {
+                    "stringValue": "function"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.call.id",
+                  "value": {
+                    "stringValue": "call_a1b2_4"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.call.arguments",
+                  "value": {
+                    "stringValue": "{\"to\": \"（記録しない）\"}"
+                  }
+                }
+              ],
+              "status": {}
+            },
+            {
+              "traceId": "f0e1d2c3b4a5968778695a4b3c2d1e0f",
+              "spanId": "f0e1d2c3b4a59680",
+              "name": "invoke_agent madoguchi-agent",
+              "kind": 1,
+              "startTimeUnixNano": "1794800000000000000",
+              "endTimeUnixNano": "1794800024000000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "invoke_agent"
+                  }
+                },
+                {
+                  "key": "gen_ai.agent.name",
+                  "value": {
+                    "stringValue": "madoguchi-agent"
+                  }
+                }
+              ],
+              "status": {}
+            },
+            {
+              "traceId": "f0e1d2c3b4a5968778695a4b3c2d1e0f",
+              "spanId": "f0e1d2c3b4a50001",
+              "parentSpanId": "f0e1d2c3b4a59680",
+              "name": "execute_tool search_faq",
+              "kind": 1,
+              "startTimeUnixNano": "1794800002000000000",
+              "endTimeUnixNano": "1794800002800000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_faq"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.type",
+                  "value": {
+                    "stringValue": "function"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.call.id",
+                  "value": {
+                    "stringValue": "call_f0e1_1"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.call.arguments",
+                  "value": {
+                    "stringValue": "{\"q\": \"転入 手続き 必要書類\"}"
+                  }
+                }
+              ],
+              "status": {}
+            },
+            {
+              "traceId": "f0e1d2c3b4a5968778695a4b3c2d1e0f",
+              "spanId": "f0e1d2c3b4a50002",
+              "parentSpanId": "f0e1d2c3b4a59680",
+              "name": "execute_tool search_faq",
+              "kind": 1,
+              "startTimeUnixNano": "1794800004000000000",
+              "endTimeUnixNano": "1794800004800000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_faq"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.type",
+                  "value": {
+                    "stringValue": "function"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.call.id",
+                  "value": {
+                    "stringValue": "call_f0e1_2"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.call.arguments",
+                  "value": {
+                    "stringValue": "{\"q\": \"転入 手続き 必要書類\"}"
+                  }
+                }
+              ],
+              "status": {}
+            },
+            {
+              "traceId": "f0e1d2c3b4a5968778695a4b3c2d1e0f",
+              "spanId": "f0e1d2c3b4a50003",
+              "parentSpanId": "f0e1d2c3b4a59680",
+              "name": "execute_tool search_faq",
+              "kind": 1,
+              "startTimeUnixNano": "1794800006000000000",
+              "endTimeUnixNano": "1794800006800000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_faq"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.type",
+                  "value": {
+                    "stringValue": "function"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.call.id",
+                  "value": {
+                    "stringValue": "call_f0e1_3"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.call.arguments",
+                  "value": {
+                    "stringValue": "{\"q\": \"転入 手続き 必要書類\"}"
+                  }
+                }
+              ],
+              "status": {}
+            },
+            {
+              "traceId": "f0e1d2c3b4a5968778695a4b3c2d1e0f",
+              "spanId": "f0e1d2c3b4a50004",
+              "parentSpanId": "f0e1d2c3b4a59680",
+              "name": "execute_tool search_faq",
+              "kind": 1,
+              "startTimeUnixNano": "1794800008000000000",
+              "endTimeUnixNano": "1794800008800000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_faq"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.type",
+                  "value": {
+                    "stringValue": "function"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.call.id",
+                  "value": {
+                    "stringValue": "call_f0e1_4"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.call.arguments",
+                  "value": {
+                    "stringValue": "{\"q\": \"転入 手続き 必要書類\"}"
+                  }
+                }
+              ],
+              "status": {}
+            },
+            {
+              "traceId": "f0e1d2c3b4a5968778695a4b3c2d1e0f",
+              "spanId": "f0e1d2c3b4a50005",
+              "parentSpanId": "f0e1d2c3b4a59680",
+              "name": "execute_tool search_faq",
+              "kind": 1,
+              "startTimeUnixNano": "1794800010000000000",
+              "endTimeUnixNano": "1794800010800000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_faq"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.type",
+                  "value": {
+                    "stringValue": "function"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.call.id",
+                  "value": {
+                    "stringValue": "call_f0e1_5"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.call.arguments",
+                  "value": {
+                    "stringValue": "{\"q\": \"転入 手続き 必要書類\"}"
+                  }
+                }
+              ],
+              "status": {}
+            },
+            {
+              "traceId": "f0e1d2c3b4a5968778695a4b3c2d1e0f",
+              "spanId": "f0e1d2c3b4a50006",
+              "parentSpanId": "f0e1d2c3b4a59680",
+              "name": "execute_tool update_record",
+              "kind": 1,
+              "startTimeUnixNano": "1794800012000000000",
+              "endTimeUnixNano": "1794800012800000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "update_record"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.type",
+                  "value": {
+                    "stringValue": "function"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.call.id",
+                  "value": {
+                    "stringValue": "call_f0e1_6"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.call.arguments",
+                  "value": {
+                    "stringValue": "{\"id\": \"R-2048\", \"status\": \"回答済み\"}"
+                  }
+                }
+              ],
+              "status": {}
+            },
+            {
+              "traceId": "f0e1d2c3b4a5968778695a4b3c2d1e0f",
+              "spanId": "f0e1d2c3b4a50007",
+              "parentSpanId": "f0e1d2c3b4a59680",
+              "name": "execute_tool request_human_approval",
+              "kind": 1,
+              "startTimeUnixNano": "1794800014000000000",
+              "endTimeUnixNano": "1794800014800000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "request_human_approval"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.type",
+                  "value": {
+                    "stringValue": "function"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.call.id",
+                  "value": {
+                    "stringValue": "call_f0e1_7"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.call.arguments",
+                  "value": {
+                    "stringValue": "{\"action\": \"send_email\"}"
+                  }
+                },
+                {
+                  "key": "app.approval.decision",
+                  "value": {
+                    "stringValue": "rejected"
+                  }
+                }
+              ],
+              "status": {}
+            },
+            {
+              "traceId": "f0e1d2c3b4a5968778695a4b3c2d1e0f",
+              "spanId": "f0e1d2c3b4a50008",
+              "parentSpanId": "f0e1d2c3b4a59680",
+              "name": "execute_tool send_email",
+              "kind": 1,
+              "startTimeUnixNano": "1794800016000000000",
+              "endTimeUnixNano": "1794800016800000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "send_email"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.type",
+                  "value": {
+                    "stringValue": "function"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.call.id",
+                  "value": {
+                    "stringValue": "call_f0e1_8"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.call.arguments",
+                  "value": {
+                    "stringValue": "{\"to\": \"（記録しない）\"}"
+                  }
+                }
+              ],
+              "status": {}
+            },
+            {
+              "traceId": "f0e1d2c3b4a5968778695a4b3c2d1e0f",
+              "spanId": "f0e1d2c3b4a50009",
+              "parentSpanId": "f0e1d2c3b4a59680",
+              "name": "execute_tool export_csv",
+              "kind": 1,
+              "startTimeUnixNano": "1794800018000000000",
+              "endTimeUnixNano": "1794800018800000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "export_csv"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.type",
+                  "value": {
+                    "stringValue": "function"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.call.id",
+                  "value": {
+                    "stringValue": "call_f0e1_9"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.call.arguments",
+                  "value": {
+                    "stringValue": "{\"path\": \"out.csv\"}"
+                  }
+                }
+              ],
+              "status": {
+                "code": 2,
+                "message": "timeout"
+              }
+            },
+            {
+              "traceId": "f0e1d2c3b4a5968778695a4b3c2d1e0f",
+              "spanId": "f0e1d2c3b4a50010",
+              "parentSpanId": "f0e1d2c3b4a59680",
+              "name": "execute_tool send_email",
+              "kind": 1,
+              "startTimeUnixNano": "1794800020000000000",
+              "endTimeUnixNano": "1794800020800000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "send_email"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.type",
+                  "value": {
+                    "stringValue": "function"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.call.id",
+                  "value": {
+                    "stringValue": "call_f0e1_10"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.call.arguments",
+                  "value": {
+                    "stringValue": "{\"to\": \"（記録しない）\"}"
+                  }
+                }
+              ],
+              "status": {}
+            },
+            {
+              "traceId": "f0e1d2c3b4a5968778695a4b3c2d1e0f",
+              "spanId": "f0e1d2c3b4a50011",
+              "parentSpanId": "f0e1d2c3b4a59680",
+              "name": "execute_tool delete_all_records",
+              "kind": 1,
+              "startTimeUnixNano": "1794800022000000000",
+              "endTimeUnixNano": "1794800022800000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "delete_all_records"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.type",
+                  "value": {
+                    "stringValue": "function"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.call.id",
+                  "value": {
+                    "stringValue": "call_f0e1_11"
+                  }
+                }
+              ],
+              "status": {}
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

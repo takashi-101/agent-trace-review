@@ -1,0 +1,13 @@
+{
+  "tools": {
+    "読み取り": ["search_faq", "get_record"],
+    "書き込み": ["update_record", "export_csv"],
+    "外部送信": ["send_email"],
+    "実行": ["run_report_script"]
+  },
+  "approval_tools": ["request_human_approval"],
+  "approval_attribute": "app.approval.decision",
+  "approval_scope": "next",
+  "max_tool_calls_per_run": 10,
+  "max_same_call_repeats": 3
+}
