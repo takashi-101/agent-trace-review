@@ -60,10 +60,14 @@ agent-trace-review traces.json --policy policy.json --out review.md --fail-on �
 - [OWASP Top 10 for Agentic Applications for 2026](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/)（OWASP GenAI Security Project、2025年12月9日）
 - [Semantic conventions for generative AI systems](https://opentelemetry.io/docs/specs/semconv/gen-ai/)（OpenTelemetry）
 
-## 学習の照会先
-- Building AI Agents and Agentic Workflows Specialization（Coursera、2026年11月4日）：[Credly](https://www.credly.com/badges/e96d781c-46ff-4443-8df6-0699bb26409f)
-- Agentic AI with LangChain and LangGraph（Coursera、2026年11月2日）：[Credly](https://www.credly.com/badges/bc08f1a5-df4d-4111-899f-46d43ebdd1ad)
-- Process Mining - From Theory to Execution（Celonis、2026年2月3日）：[Credly](https://www.credly.com/badges/fdace98e-d7e0-4429-a86b-b37adc7e548e)
+## 根拠（学習）
+
+| 機能 | 裏付けになる学習（発行元・名称・発行日） | 照会先（Credly） |
+|---|---|---|
+| AIエージェントの行動記録（OpenTelemetry）の点検 | Coursera（認定：IBM）「Building AI Agents and Agentic Workflows Specialization」2026年11月4日 | https://www.credly.com/badges/e96d781c-46ff-4443-8df6-0699bb26409f |
+| 人の承認を経ない操作・却下された操作の検出 | Coursera（認定：IBM）「Agentic AI with LangChain and LangGraph」2026年11月2日 | https://www.credly.com/badges/bc08f1a5-df4d-4111-899f-46d43ebdd1ad |
+| 行動記録（イベントログ）からの処理の流れの再構成 | Celonis「Process Mining - From Theory to Execution」2026年2月3日 | https://www.credly.com/badges/fdace98e-d7e0-4429-a86b-b37adc7e548e |
+
 - Agents and Workflows（OpenAI Academy、2026年8月26日）：[修了証](https://academy.openai.com/public/certificate/uhekl6rpw0)
 - Credlyの全件（JavaScriptを動かさずに読めるJSON。AIの読み込み機能や検索のクローラーでも読める）：https://www.credly.com/users/takashi-higuchi.2d0eec27/badges.json
 
