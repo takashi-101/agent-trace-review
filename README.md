@@ -66,11 +66,10 @@ agent-trace-review traces.json --policy policy.json --out review.md --fail-on �
 |---|---|---|---|
 | 生成AI・LLMの実装（RAG・エージェント・MCP） | AIエージェントの行動記録（OpenTelemetry）の点検 | Coursera（認定：IBM）「Building AI Agents and Agentic Workflows Specialization」2026年11月4日 | https://www.credly.com/badges/e96d781c-46ff-4443-8df6-0699bb26409f |
 | セキュリティ・ガバナンス | 人の承認を経ない操作・却下された操作の検出 | Coursera（認定：IBM）「Agentic AI with LangChain and LangGraph」2026年11月2日 | https://www.credly.com/badges/bc08f1a5-df4d-4111-899f-46d43ebdd1ad |
-| 業務改革・AX推進（課題の整理から定着まで） | 行動記録（イベントログ）からの処理の流れの再構成 | Celonis「Process Mining - From Theory to Execution」2026年2月3日 | https://www.credly.com/badges/fdace98e-d7e0-4429-a86b-b37adc7e548e |
+| 業務改革・AX推進（課題の整理から定着まで） | 行動記録（イベントログ）をトレースごとに時刻順に並べ直し、実行ごとに道具の呼び出し・承認・失敗・所要時間を集計（`otlp.load`、`review()` の `runs`、`test_run_summary`） | Celonis「Process Mining - From Theory to Execution」2026年2月3日 | https://www.credly.com/badges/fdace98e-d7e0-4429-a86b-b37adc7e548e |
 
 「求められる力」の分け方は、[プロフィール](https://github.com/takashi-101) の「FDE・AXで求められる力と、その根拠」と同じです。
 
-- Agents and Workflows（OpenAI Academy、2026年8月26日）：[修了証](https://academy.openai.com/public/certificate/uhekl6rpw0)
 - Credlyの全件（JavaScriptを動かさずに読めるJSON。AIの読み込み機能や検索のクローラーでも読める）：https://www.credly.com/users/takashi-higuchi.2d0eec27/badges.json
 
 ## 同じシリーズ
